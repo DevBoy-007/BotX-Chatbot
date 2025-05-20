@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+/* Transparent scrollbar */
+.transparent-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.transparent-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.0); /* white with 20% opacity */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+  height: 12px;
+  /* Height of the scrollbar (horizontal) */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+  /* Lightly transparent track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);
+  /* Semi-transparent thumb */
+  border-radius: 6px;
+  /* Roundness of the scrollbar thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0);
+  /* Slightly more opaque on hover */
+}
+
+
+
+
+
+
